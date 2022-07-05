@@ -6,10 +6,12 @@ Use Array.prototype.reduce() to add each value to an accumulator, initialized wi
 */
 
 let arr = [1,2,3,4,5,'']
+let accumulator = 0
+
 const sumArr = arr.map(num => typeof num === 'number' ? num : 0)
+
 const result = sumArr.reduce((current, next) => {
-    let accumulator = 0
     return accumulator = current + next
 })
 
-console.log(result)
+console.log(accumulator)
